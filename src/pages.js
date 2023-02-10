@@ -1,5 +1,5 @@
 const Database = require('./database/db');
-const saveOrphanage = require('./database/saveOrphanage');
+const save = require('./database/saveOrphanage');
 
 module.exports = {
 
@@ -58,9 +58,9 @@ module.exports = {
         }
 
         try {
-                    //salvar um orfanato
+            //salvar um orfanato
             const db = await Database
-            await saveOrphanage(db,{
+            await save.saveOrphanage(db,{
                 lat: fields.lat,
                 lng: fields.lng,
                 name: fields.name,
@@ -73,7 +73,7 @@ module.exports = {
             })
 
             //redirecionamento
-            return response.redirec('/orphanages')
+            return response.redirect('/orphanages')
             
         } catch (error) {
             console.log(error)

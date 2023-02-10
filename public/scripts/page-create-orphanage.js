@@ -1,5 +1,5 @@
 //create map
-//const map = L.map('mapid').setView([-27.222633,-49.6455874], 15)
+const map = L.map('mapid').setView([-27.222633,-49.6455874], 15)
 
 //create and add tileLayer
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png')
@@ -12,22 +12,20 @@ const icon = L.icon({
     iconAnchor: [29, 68]
 })
 
-let marker;
-
 //create and add marker
+let marker;
 map.on('click', (event) => {
     const lat = event.latlng.lat;
     const lng = event.latlng.lng;
 
-    document.querySelector('[name=lat]'), value = lat;
-    document.querySelector('[name=lng]'), value = lng;
+    document.querySelector('[name=lat]').value = lat;
+    document.querySelector('[name=lng]').value = lng;
 
     //remove icon
-    marker && map.removeLayer(marker)
+    marker && map.removeLayer(marker);
 
     // add icon layer
-    marker = L.marker([lat, lng], {icon})
-    .addTo(map)
+    marker = L.marker([lat, lng], {icon}).addTo(map)
 
 })
 
@@ -87,10 +85,8 @@ function toggleSelect(event) {
 }
 
 function validate(event){
-
-    //validar se lat e lng estao preenchidos, pgar querySlector e ver se value esta vazio, se tiver fazer o event
-    const needsLatAndLng = true;
-    if(needsLatAndLng){
+    const latlng = document.querySelector('input[type="hidden"]');
+    if(latlng.value ==""){
         event.preventDefault()
         alert('Selecione um ponto no mapa')
     }

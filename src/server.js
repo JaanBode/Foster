@@ -2,6 +2,7 @@
 const express = require('express');
 const path = require('path');
 const pages = require('./pages.js');
+const port = process.env.PORT || 5500;
 
 //iniciando o express
 const server = express()
@@ -21,4 +22,4 @@ server
 .post('/save-orphanage', pages.saveOrphanage)
 
 //ligar o servidor
-server.listen(5500)
+server.listen(port)

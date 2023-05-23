@@ -67,7 +67,7 @@ Para executar o **Server**, utilize o seguinte comando no diretório padrão:
  npm start
 ```
 
-*diretório_padrão: normalmente localizado em "C:\Program Files"
+*diretório_padrão: normalmente localizado em "C:\Arquivos de Programas"
 <!--<h1 align="center">
   <img alt="Proffy" src="public/images/logo.svg" height="100px" />
     <br>Foster, your company to world<br/>

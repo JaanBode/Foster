@@ -22,7 +22,7 @@
 
 ## Live-Server
 - [Foster](https://fosterstores.onrender.com) - Site rodando as últimas modificações do projeto
-- [Foster](https://rose-armadillo-tutu.cyclic.app/) - Site backup.
+- [Foster](https://repulsive-toga-fish.cyclic.app/) - Site backup.
 
 <a id="tecnologias"></a>
 

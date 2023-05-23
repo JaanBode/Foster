@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Localize uma Associação | Foster</title>
+  <title>Localize uma Loja | Foster</title>
 
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
     integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
@@ -18,7 +18,7 @@
 
   <link rel="stylesheet" href="/css/main.css" />
   <link rel="stylesheet" href="/css/animations.css" />
-  <link rel="stylesheet" href="/css/page-orphanages.css" />
+  <link rel="stylesheet" href="/css/page-stores.css" />
 
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
 
@@ -41,14 +41,14 @@
   </body> <!-- Fim do corpo da página -->
 
 <body>
-  <div id="page-orphanages">
+  <div id="page-stores">
     <aside class="animate-right">
       <header>
-        <img src="/images/map-marker.svg" alt="Happy" />
+        <img src="/images/map-marker.svg" alt="Foster" />
 
-        <h2>Escolha um orfanato ou asilo no mapa</h2>
+        <h2>Escolha uma loja no mapa</h2>
 
-        <p>Muitas pessoas estão esperando a sua visita :)</p>
+        <p>Compre online ou nos visite no centro mais próximo</p>
       </header>
 
       <footer>
@@ -59,8 +59,8 @@
 
     <div id="mapid" class="animate-appear"></div>
 
-    <div class="orphanages">
-      {{#each orphanages}}
+    <div class="stores">
+      {{#each stores}}
       <span hidden 
       data-id="{{this.id}}" 
       data-name="{{this.name}}" 
@@ -71,12 +71,12 @@
       {{/each}}
     </div>
 
-    <a href="/create-orphanage" class="create-orphanage" title="Cadastre um orfanato">
-      <img src="/images/plus.svg" alt="Criar orfanato" />
+    <a href="/create-store" class="create-store" title="Cadastre uma loja">
+      <img src="/images/plus.svg" alt="Criar loja" />
     </a>
   </div>
 
-  <script src="/scripts/page-orphanages.js"></script>
+  <script src="/scripts/page-stores.js"></script>
 
 </body>
 

@@ -2,9 +2,11 @@
 const express = require('express');
 const path = require('path');
 const pages = require('./pages.js');
+const port = 5500;
 
 //iniciando o express
 const server = express()
+
 server
 //utilizar body do require
 .use(express.urlencoded({extended: true}))
@@ -15,10 +17,10 @@ server
 .set('view engine', 'hbs')
 //criar uma rota
 .get('/', pages.index)
-.get('/orphanage', pages.orphanage)
-.get('/orphanages', pages.orphanages)
-.get('/create-orphanage', pages.createOrphanage)
-.post('/save-orphanage', pages.saveOrphanage)
+.get('/store', pages.store)
+.get('/stores', pages.stores)
+.get('/create-store', pages.createStore)
+.post('/save-store', pages.saveStore)
 
 //ligar o servidor
-server.listen(5500)
+server.listen(process.env.PORT || port)

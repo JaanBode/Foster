@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Adicionar um Orfanato | Happy</title>
+    <title>Adicionar uma Loja | Foster</title>
 
     <link
       rel="stylesheet"
@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="/css/map.css" />
     <link rel="stylesheet" href="/css/form.css" />
     <link rel="stylesheet" href="/css/buttons.css" />
-    <link rel="stylesheet" href="/css/page-create-orphanage.css" />
+    <link rel="stylesheet" href="/css/page-create-store.css" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
@@ -51,7 +51,7 @@
   </body> <!-- Fim do corpo da página -->
 
   <body>
-    <div id="page-create-orphanage">
+    <div id="page-create-store">
       <aside class="animate-right sidebar">
         <img src="/images//map-marker.svg" alt="Happy" />
 
@@ -63,7 +63,7 @@
       </aside>
 
       <main class="animate-appear with-sidebar">
-        <form action="save-orphanage" method="post" onsubmit="validate(event)">
+        <form action="save-store" method="post" onsubmit="validate(event)">
           <fieldset>
             <legend>Dados</legend>
 
@@ -126,10 +126,10 @@
           </fieldset>
 
           <fieldset>
-            <legend>Visitação</legend>
+            <legend>Detalhes</legend>
 
             <div class="input-block">
-              <label for="instructions">Instruções</label>
+              <label for="instructions">Produtos</label>
               <textarea
                 id="instructions"
                 name="instructions"
@@ -138,7 +138,7 @@
             </div>
 
             <div class="input-block">
-              <label for="opening_hours">Horário das Visitas</label>
+              <label for="opening_hours">Horário de Atendimento</label>
               <input id="opening_hours" name="opening_hours" required />
             </div>
 
@@ -178,6 +178,6 @@
       </main>
     </div>
 
-    <script src="/scripts/page-create-orphanage.js"></script>
+    <script src="/scripts/page-create-store.js"></script>
   </body>
 </html>

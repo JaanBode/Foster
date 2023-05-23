@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{orphanage.name}} | Happy</title>
+    <title>{{store.name}} | Foster</title>
 
     <link
       rel="stylesheet"
@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="/css/sidebar.css" />
     <link rel="stylesheet" href="/css/buttons.css" />
     <link rel="stylesheet" href="/css/map.css"/>
-    <link rel="stylesheet" href="/css/page-orphanage.css" />
+    <link rel="stylesheet" href="/css/page-store.css" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
@@ -50,7 +50,7 @@
   </body> <!-- Fim do corpo da página -->
 
   <body>
-    <div id="page-orphanage">
+    <div id="page-store">
       <aside class="animate-right sidebar">
 
         <img src="/images//map-marker.svg" alt="Happy">
@@ -65,47 +65,47 @@
 
       <main class="animate-appear with-sidebar">
 
-        <div class="orphanage-details">
+        <div class="store-details">
           
-          <img src="{{orphanage.firstImage}}" alt="{{orphanage.name}}" />
+          <img src="{{store.firstImage}}" alt="{{store.name}}" />
 
           <div class="images">
-            {{#each orphanage.images}}
+            {{#each store.images}}
             <button onclick="selectImage(event)" class="active" type="button">
-              <img src="{{this}}" alt="{{orphanage.name}}" />
+              <img src="{{this}}" alt="{{store.name}}" />
             </button>
             {{/each}}
           </div>
 
-          <div class="orphanage-details-content">
-            <h1>{{orphanage.name}}</h1>
+          <div class="store-details-content">
+            <h1>{{store.name}}</h1>
 
-            <p>{{orphanage.about}}</p>
+            <p>{{store.about}}</p>
 
             <div class="map-container">
               <div id="mapid"></div>
-              <span data-lat="{{orphanage.lat}}" data-lng="{{orphanage.lng}}"></span>
+              <span data-lat="{{store.lat}}" data-lng="{{store.lng}}"></span>
               <footer>
                 <a 
                 target="_blank"
-                href="https://maps.google.com/mobile?q={{orphanage.lat}},{{orphanage.lng}}&z=15"Ver rotas no Google Maps></a>
+                href="https://maps.google.com/mobile?q={{store.lat}},{{store.lng}}&z=15"Ver rotas no Google Maps></a>
               </footer>
             </div>
 
             <hr />
 
-            <h2>Instruções para visita</h2>
+            <h2>Horário</h2>
 
-            <p>{{orphanage.instructions}}</p>
+            <p>{{store.instructions}}</p>
 
             <div class="open-details">
 
               <div class="hour">
                 <img src="/images/clock.svg" alt="Horários" />
-                {{orphanage.opening_hours}}
+                {{store.opening_hours}}
               </div>
 
-              {{#if orphanage.open_on_weekends}}
+              {{#if store.open_on_weekends}}
                 <div class="open-on-weekends">
                   
                   <img src="/images/info-red.svg" alt="Informações" />
@@ -122,7 +122,7 @@
               {{/if}}
             </div>
 
-            <a href="htps://api.whatsapp.com/send?l=pt_BR&{{orphanage.whatsapp}}" target="_blank"
+            <a href="htps://api.whatsapp.com/send?l=pt_BR&{{store.whatsapp}}" target="_blank"
             class="primary-button" type="button">
               <img
                 src="/images/whatsapp.svg"
@@ -136,6 +136,6 @@
       </main>
     </div>
 
-    <script src="/scripts/page-orphanage.js"></script>
+    <script src="/scripts/page-store.js"></script>
   </body>
 </html>

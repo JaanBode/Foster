@@ -1,8 +1,8 @@
 #page-landing {
-  background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%);
+  background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 110%);
 
   text-align: center;
-  min-height: 100vh;
+  min-height: 80vh;
 
   display: flex;
 }
@@ -10,7 +10,7 @@
 #container {
   margin: auto;
 
-  width: min(90%, 112rem);
+  width: min(70%, 90rem);
 }
 
 .location,
@@ -59,12 +59,12 @@ main h1 {
 }
 
 /* desktop version */
-@media (min-width: 860px) {
+@media (min-width: 1080px) {
   #container {
-    padding: 5rem 2rem;
+    padding: 6rem 6rem;
     /* shorthand background: image repeat possition size*/
     background: url("../images/bg.svg") no-repeat 80% /
-      clamp(30rem, 54vw, 56rem);
+      clamp(50rem, 84vw, 56rem);
   }
 
   header {
@@ -82,17 +82,17 @@ main h1 {
 
   .location {
     text-align: right;
-    font-size: 2.4rem;
+    font-size: 4.4rem;
     line-height: 1.5;
   }
 
   main h1 {
     font-weight: bold;
-    line-height: 0.88;
+    line-height: 0.9;
 
     margin: clamp(10%, 9vh, 12%) 0 4rem;
 
-    width: min(300px, 80%);
+    width: min(300px, 70%);
   }
 
   .visit {

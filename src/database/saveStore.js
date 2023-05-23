@@ -21,7 +21,7 @@ module.exports ={
             "${store.whatsapp}",
             "${store.images}",
             "${store.instructions}",
-            "${store.opnening_hours}",
+            "${store.opening_hours}",
             "${store.open_on_weekends}"
         );
     `)

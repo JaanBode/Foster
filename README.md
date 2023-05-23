@@ -1,5 +1,5 @@
 <p align="center">
-    <a href="//fosterstores.onrender.com"><img alt="Acesso ao site" width="650px" src="public/images/laptopFoster.png" />
+    <a href="//fosterstores.onrender.com"><img alt="Acess to the site" width="650px" src="public/images/laptopFoster.png" />
 <p>
   
 <div align="center">
@@ -9,66 +9,66 @@
 </div>
   
 <p align="center">
-  <a href="#sobre">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#about">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#live-server">Live Server</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#executar">Como Executar</a>
+  <a href="#dependencies">Dependencies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#execute">How to run</a>
 </p>
 
-<a id="sobre"></a>
-**Foster** é uma aplicação Web que possibilita aos usuários cadastrar e gerenciar seu comércio com a devida logística. Aos usuários clientes, é oferecido detalhes do local, como horários e serviços ofertados pelo estabelecimento. Com sua tecnologia de mapeamento é possibilitado a inclusão de qualquer tipo de comércio com sua devida localização.
-
+<a id="about"></a>
+**Foster** is a web application when the owners of a establishment can register and manage the bussines with their respectives logistics. The clients can see the details about the place, opening hours and foreheads instructiions. With Foster you can map every store in your possession without burocracy.
+        
 <a id="live-server"></a>
 
 ## Live-Server
-- [Foster](https://fosterstores.onrender.com) - Site rodando as últimas modificações do projeto
-- [Foster](https://rose-armadillo-tutu.cyclic.app/) - Site backup.
+- [Foster](https://fosterstores.onrender.com) - real-time site.
+- [Foster](https://repulsive-toga-fish.cyclic.app/) - Backup site.
 
-<a id="tecnologias"></a>
+<a id="dependencies"></a>
 
-## Tecnologias
+## Dependencies
 
-- [NodeJS](https://nodejs.org/pt-br/) - Ambiente de desenvolvimento Javascript em tempo real.
-- [Leaflet](https://leafletjs.com/) - Containers de mapas com overlays interativos.
-- [SQLite](https://www.sqlite.org/index.html) - Banco de Dados para armazenar informações necessárias.
-- [VLibras](https://www.gov.br/governodigital/pt-br/vlibras) - Leitor em Libras de informações na tela.
+- [NodeJS](https://nodejs.org/pt-br/) - Javascript Runtime Environment.
+- [Leaflet](https://leafletjs.com/) - map containers with overlays.
+- [SQLite](https://www.sqlite.org/index.html) - database to configure each store individually.
+- [VLibras](https://www.gov.br/governodigital/pt-br/vlibras) - Brazilian Sign Language Translator.
 
-<a id="executar"></a>
+<a id="execute"></a>
 
-## Como Executar Localmente
+## Locally running
 
-<h2><strong>Pré-requisitos</strong></h2>
+<h2><strong>Pre-requirements</strong></h2>
 
-- **necessário** possuir o **[Node.js](https://nodejs.org/en/)** instalado no computador.
-- **necessário** possuir o gerenciador de pacotes **[NPM](https://www.npmjs.com/)**.
-- **opcional** possuir o **[Git](https://git-scm.com/)** instalado e configurado no computador.
+- **required** **[Node.js](https://nodejs.org/en/)** instalado no computador.
+- **required** package manager **[NPM](https://www.npmjs.com/)**.
+- **optional** **[Git](https://git-scm.com/)** installed and configured in your machine.
 
-## Passo 1: Clonando o Projeto na sua máquina:
+## 1: Cloning the repository to your computer:
 
-Abra o Windows PowerShell, digite:
+Open Windows PowerShell, and type the following instructions:
 ```sh
-  cd *diretório_padrão
+  cd *roty_directory
 ```
-e em seguida:
+and:
 ```sh
   https://github.com/JacanaFSilva/Foster.git
 ```
 
-## Passo 2: Configurando o Projeto:
+## 2: Starting package manager:
 
 ```sh
  npm install
 ```
 
-## Passo 3: Executando a aplicação.
+## Passo 3: Running the aplication.
 
-Para executar o **Server**, utilize o seguinte comando no diretório padrão:
+To open the **Server** enter:
 
 ```sh
  npm start
 ```
 
-*diretório_padrão: normalmente localizado em "C:\Arquivos de Programas"
+*root_directory: by default "C:\Program Files"
 <!--<h1 align="center">
   <img alt="Proffy" src="public/images/logo.svg" height="100px" />
     <br>Foster, your company to world<br/>

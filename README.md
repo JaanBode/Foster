@@ -1,5 +1,5 @@
 <p align="center">
-    <img alt="Design do Projeto" width="650px" src="public/images/laptopFoster.png" />
+    <a href="//fosterstores.onrender.com"><img alt="Acesso ao site" width="650px" src="public/images/laptopFoster.png" />
 <p>
   
 <div align="center">

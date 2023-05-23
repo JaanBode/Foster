@@ -68,7 +68,7 @@ To open the **Server** enter:
  npm start
 ```
 
-*root_directory: by default "C:\Arquivos de Programas"
+*root_directory: by default "C:\Program Files"
 <!--<h1 align="center">
   <img alt="Proffy" src="public/images/logo.svg" height="100px" />
     <br>Foster, your company to world<br/>

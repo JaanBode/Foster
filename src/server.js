@@ -2,10 +2,11 @@
 const express = require('express');
 const path = require('path');
 const pages = require('./pages.js');
-const port = process.env.PORT || 5500;
+const port = 5500;
 
 //iniciando o express
 const server = express()
+
 server
 //utilizar body do require
 .use(express.urlencoded({extended: true}))
@@ -22,4 +23,4 @@ server
 .post('/save-store', pages.saveStore)
 
 //ligar o servidor
-server.listen(port)
+server.listen(process.env.PORT || port)

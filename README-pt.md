@@ -1,16 +1,16 @@
 <p align="center">
-    <img alt="Design do Projeto" width="650px" src="public/images/laptopFoster.png" />
+    <a href="//fosterstores.onrender.com"><img alt="Acesso ao site" width="650px" src="public/images/laptopFoster.png" />
 <p>
   
 <div align="center">
   <a href="README.md">Português</a>
   ·
-  <a href="README-en.md">English</a>
+  <a href="README-pt.md">English</a>
 </div>
   
 <p align="center">
   <a href="#sobre">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#live-server">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#live-server">Live Server</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#executar">Como Executar</a>
 </p>
@@ -21,7 +21,8 @@
 <a id="live-server"></a>
 
 ## Live-Server
-- [Foster](https://rose-armadillo-tutu.cyclic.app/) - Site rodando as últimas modificações do projeto
+- [Foster](https://fosterstores.onrender.com) - Site rodando as últimas modificações do projeto
+- [Foster](https://rose-armadillo-tutu.cyclic.app/) - Site backup.
 
 <a id="tecnologias"></a>
 
@@ -67,7 +68,7 @@ Para executar o **Server**, utilize o seguinte comando no diretório padrão:
  npm start
 ```
 
-*diretório_padrão: normalmente localizado em "C:\Program Files"
+*diretório_padrão: normalmente localizado em "C:\Arquivos de Programas"
 <!--<h1 align="center">
   <img alt="Proffy" src="public/images/logo.svg" height="100px" />
     <br>Foster, your company to world<br/>

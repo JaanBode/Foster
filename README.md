@@ -39,9 +39,9 @@
 
 <h2><strong>Pre-requirements</strong></h2>
 
-- **required** **[Node.js](https://nodejs.org/en/)** instalado no computador.
-- **required** package manager **[NPM](https://www.npmjs.com/)**.
-- **optional** **[Git](https://git-scm.com/)** installed and configured in your machine.
+- **required** **[Node.js](https://nodejs.org/en/)** framework.
+- **required** **[NPM](https://www.npmjs.com/)** package manager .
+- **optional** **[Git](https://git-scm.com/)** easy reading.
 
 ## 1: Cloning the repository to your computer:
 

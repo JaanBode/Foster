@@ -3,9 +3,9 @@
 <p>
   
 <div align="center">
-  <a href="README.md">Português</a>
+  <a href="README-pt.md">Português</a>
   ·
-  <a href="README-pt.md">English</a>
+  <a href="README.md">English</a>
 </div>
   
 <p align="center">

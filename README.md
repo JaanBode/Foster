@@ -21,7 +21,7 @@
 <a id="live-server"></a>
 
 ## Live-Server
-- [Foster](https://foster-a120.onrender.com) - Site rodando as últimas modificações do projeto
+- [Foster](https://fosterstores.onrender.com) - Site rodando as últimas modificações do projeto
 - [Foster](https://rose-armadillo-tutu.cyclic.app/) - Site backup.
 
 <a id="tecnologias"></a>

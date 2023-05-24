@@ -51,7 +51,7 @@ Abra o Windows PowerShell, digite:
 ```
 e em seguida:
 ```sh
-  https://github.com/JacanaFSilva/Foster.git
+  git clone https://github.com/JacanaFSilva/Foster.git
 ```
 
 ## Passo 2: Configurando o Projeto:

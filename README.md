@@ -51,7 +51,7 @@ Open Windows PowerShell, and type the following instructions:
 ```
 and:
 ```sh
-  https://github.com/JacanaFSilva/Foster.git
+  git clone https://github.com/JacanaFSilva/Foster.git
 ```
 
 ## 2: Starting package manager:

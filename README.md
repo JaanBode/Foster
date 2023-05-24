@@ -60,7 +60,7 @@ and:
  npm install
 ```
 
-## Passo 3: Running the aplication.
+## 3: Running the aplication.
 
 To open the **Server** enter:
 

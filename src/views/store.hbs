@@ -33,22 +33,6 @@
     />
   </head>
 
-  <body> <!-- Inicio do corpo da página -->
-
-    ... <!-- Conteúdo da página -->
-
-    <div vw class="enabled">
-      <div vw-access-button class="active"></div>
-      <div vw-plugin-wrapper>
-        <div class="vw-plugin-top-wrapper"></div>
-      </div>
-    </div>
-    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>
-      new window.VLibras.Widget('https://vlibras.gov.br/app');
-    </script>
-  </body> <!-- Fim do corpo da página -->
-
   <body>
     <div id="page-store">
       <aside class="animate-right sidebar">
@@ -92,11 +76,9 @@
               </footer>
             </div>
 
-            <hr />
-
-            <h2>Horário</h2>
-
             <p>{{store.instructions}}</p>
+            
+            <h2>Horário</h2>
 
             <div class="open-details">
 
@@ -137,5 +119,17 @@
     </div>
 
     <script src="/scripts/page-store.js"></script>
+    
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    
   </body>
 </html>

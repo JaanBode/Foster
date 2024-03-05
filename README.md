@@ -16,7 +16,7 @@
 </p>
 
 <a id="about"></a>
-**Foster** is a web application when the owners of a establishment can register and manage the bussines with their respectives logistics. The clients can see the details about the place, opening hours and foreheads instructiions. With Foster you can map every store in your possession without burocracy.
+**Foster** is a web application for owners of a establishment register and manage their bussines enquirements respectives logistics. Clients can see the details about the place, opening hours and foreheads instructions. Foster maps every store at your location.
         
 <a id="live-server"></a>
 

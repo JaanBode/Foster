@@ -47,7 +47,7 @@
 
 Open Windows PowerShell, and type the following instructions:
 ```sh
-  cd *roty_directory
+  cd roty_directory
 ```
 and:
 ```sh

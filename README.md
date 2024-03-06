@@ -41,7 +41,7 @@
 
 - **required** **[Node.js](https://nodejs.org/en/)** framework.
 - **required** **[NPM](https://www.npmjs.com/)** package manager .
-- **optional** **[Git](https://git-scm.com/)** easy reading.
+- **optional** **[Git](https://git-scm.com/)** source code control.
 
 ## 1: Cloning the repository to your computer:
 

@@ -45,9 +45,9 @@
 
 ## 1: Cloning the repository to your computer:
 
-Open Windows PowerShell, and type the following instructions:
+Open Windows PowerShell, and select your driver by typing the following instructions:
 ```sh
-  cd roty_directory
+  cd C:\Foster
 ```
 and:
 ```sh

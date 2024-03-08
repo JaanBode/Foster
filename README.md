@@ -21,8 +21,8 @@
 <a id="live-server"></a>
 
 ## Live-Server
-- [Foster](https://fosterstores.onrender.com) - real-time site.
-- [Foster](https://repulsive-toga-fish.cyclic.app/) - Backup site.
+- [Foster](https://fosterstores.onrender.com) - Real Time Website.
+- [Foster](https://repulsive-toga-fish.cyclic.app/) - Backup Website.
 
 <a id="dependencies"></a>
 

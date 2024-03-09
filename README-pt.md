@@ -16,7 +16,7 @@
 </p>
 
 <a id="sobre"></a>
-**Foster** é uma aplicação Web que possibilita aos usuários cadastrar e gerenciar seu comércio com a devida logística. Aos usuários clientes, é oferecido detalhes do local, como horários e serviços ofertados pelo estabelecimento. Com sua tecnologia de mapeamento é possibilitado a inclusão de qualquer tipo de comércio com sua devida localização.
+**Foster** é uma aplicação web para proprietários de estabelecimentos cadastrarem e gerenciarem suas consultas comerciais e respectivas logísticas. Clientes podem ver os detalhes do local, horário de funcionamento e instruções de testa. Foster mapeia todas as lojas em sua localização.
 
 <a id="live-server"></a>
 
@@ -51,7 +51,7 @@ Abra o Windows PowerShell, digite:
 ```
 e em seguida:
 ```sh
-  https://github.com/JacanaFSilva/Foster.git
+  git clone https://github.com/JacanaFSilva/Foster.git
 ```
 
 ## Passo 2: Configurando o Projeto:
@@ -60,15 +60,13 @@ e em seguida:
  npm install
 ```
 
-## Passo 3: Executando a aplicação.
-
-Para executar o **Server**, utilize o seguinte comando no diretório padrão:
+## Passo 3: Executando via Terminal Git.
 
 ```sh
  npm start
 ```
 
-*diretório_padrão: normalmente localizado em "C:\Arquivos de Programas"
+*Dentro da pasta Templates, acesse um dos modelos de negócio disponíveis, copie e cole as pastas "public" e "src" para a pasta principal, recarregue a página para vizualizar as alterações
 <!--<h1 align="center">
   <img alt="Proffy" src="public/images/logo.svg" height="100px" />
     <br>Foster, your company to world<br/>

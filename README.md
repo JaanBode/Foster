@@ -16,13 +16,13 @@
 </p>
 
 <a id="about"></a>
-**Foster** is a web application when the owners of a establishment can register and manage the bussines with their respectives logistics. The clients can see the details about the place, opening hours and foreheads instructiions. With Foster you can map every store in your possession without burocracy.
+**Foster** is a web application for owners of a establishment register and manage their bussines enquirements respectives logistics. Clients can see the details about the place, opening hours and foreheads instructions. Foster maps every store at your location.
         
 <a id="live-server"></a>
 
 ## Live-Server
-- [Foster](https://fosterstores.onrender.com) - real-time site.
-- [Foster](https://repulsive-toga-fish.cyclic.app/) - Backup site.
+- [Foster](https://fosterstores.onrender.com) - Real Time Website.
+- [Foster](https://repulsive-toga-fish.cyclic.app/) - Backup Website.
 
 <a id="dependencies"></a>
 
@@ -35,23 +35,23 @@
 
 <a id="execute"></a>
 
-## Locally running
+## Local run
 
 <h2><strong>Pre-requirements</strong></h2>
 
 - **required** **[Node.js](https://nodejs.org/en/)** framework.
 - **required** **[NPM](https://www.npmjs.com/)** package manager .
-- **optional** **[Git](https://git-scm.com/)** easy reading.
+- **optional** **[Git](https://git-scm.com/)** source code control.
 
 ## 1: Cloning the repository to your computer:
 
-Open Windows PowerShell, and type the following instructions:
+Open Windows PowerShell, and select your driver by typing the following instructions:
 ```sh
-  cd *roty_directory
+  cd C:\Foster
 ```
 and:
 ```sh
-  https://github.com/JacanaFSilva/Foster.git
+  git clone https://github.com/JacanaFSilva/Foster.git
 ```
 
 ## 2: Starting package manager:
@@ -60,15 +60,13 @@ and:
  npm install
 ```
 
-## 3: Running the aplication.
-
-To open the **Server** enter:
+## 3: Running via Git Terminal:
 
 ```sh
  npm start
 ```
 
-*root_directory: by default "C:\Program Files"
+*Inside the Templates folder, access one of the available business models, copy and paste the "public" and "src" folders to the main folder, reload the page to view the changes
 <!--<h1 align="center">
   <img alt="Proffy" src="public/images/logo.svg" height="100px" />
     <br>Foster, your company to world<br/>

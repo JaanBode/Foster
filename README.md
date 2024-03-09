@@ -66,7 +66,7 @@ and:
  npm start
 ```
 
-*Inside the Templates folder, access one of the available business models, copy and paste the "public" and "src" folders to the main folder, reload the page to view the changes"
+*Inside the Templates folder, access one of the available business models, copy and paste the "public" and "src" folders to the main folder, reload the page to view the changes
 <!--<h1 align="center">
   <img alt="Proffy" src="public/images/logo.svg" height="100px" />
     <br>Foster, your company to world<br/>

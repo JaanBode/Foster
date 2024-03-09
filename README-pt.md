@@ -21,7 +21,8 @@
 <a id="live-server"></a>
 
 ## Live-Server
-- [Foster](https://fosterstores.onrender.com) - Site rodando as últimas modificações do projeto
+- [Foster](https://fosterstores.onrender.com) - Site rodando as últimas modificações do projeto.
+- [Foster](https://foster-7u8w.onrender.com/) - Url de Testes.
 - [Foster](https://repulsive-toga-fish.cyclic.app/) - Site backup.
 
 <a id="tecnologias"></a>

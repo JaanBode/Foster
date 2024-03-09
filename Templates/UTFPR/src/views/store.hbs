@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{store.name}} | UTFPR</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+
+    <link rel="icon" href="/images/logo-icon.png" />
+
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/animations.css" />
+    <link rel="stylesheet" href="/css/sidebar.css" />
+    <link rel="stylesheet" href="/css/buttons.css" />
+    <link rel="stylesheet" href="/css/map.css"/>
+    <link rel="stylesheet" href="/css/page-store.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="page-store">
+      <aside class="animate-right sidebar">
+
+        <img src="/images//map-marker.svg" alt="Happy">
+
+        <footer>
+          <button onclick="history.back()">
+            <img src="/images/arrow-back.svg" alt="Voltar">
+          </button>
+        </footer>
+
+      </aside>
+
+      <main class="animate-appear with-sidebar">
+
+        <div class="store-details">
+          
+          <img src="{{store.firstImage}}" alt="{{store.name}}" />
+
+          <div class="images">
+            {{#each store.images}}
+            <button onclick="selectImage(event)" class="active" type="button">
+              <img src="{{this}}" alt="{{store.name}}" />
+            </button>
+            {{/each}}
+          </div>
+
+          <div class="store-details-content">
+            <h1>{{store.name}}</h1>
+
+            <p>{{store.about}}</p>
+
+            <div class="map-container">
+              <div id="mapid"></div>
+              <span data-lat="{{store.lat}}" data-lng="{{store.lng}}"></span>
+              <footer>
+                <a 
+                target="_blank"
+                href="https://maps.google.com/mobile?q={{store.lat}},{{store.lng}}&z=15"Ver rotas no Google Maps></a>
+              </footer>
+            </div>
+            
+            <hr />
+
+            <p>{{store.instructions}}</p>
+            
+            <hr />
+            
+            <h2>Horário</h2>
+
+            <div class="open-details">
+
+              <div class="hour">
+                <img src="/images/clock.svg" alt="Horários" />
+                {{store.opening_hours}}
+              </div>
+
+              {{#if store.open_on_weekends}}
+                <div class="open-on-weekends">
+                  
+                  <img src="/images/info-red.svg" alt="Informações" />
+                  Atendemos fim de semana
+                  
+                </div>
+                {{else}}
+                  <div class="open-on-weekends closed">
+                  
+                  <img src="/images/info.svg" alt="Informações" />
+                  Não atendemos fim de semana
+                  
+                </div>
+              {{/if}}
+            </div>
+
+            <a href="htps://api.whatsapp.com/send?l=pt_BR&{{store.whatsapp}}" target="_blank"
+            class="primary-button" type="button">
+              <img
+                src="/images/whatsapp.svg"
+                alt="Chamar no whatsapp"
+              />
+              Entrar em contato
+            </a>
+
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="/scripts/page-store.js"></script>
+    
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    
+  </body>
+</html>

@@ -45,27 +45,34 @@
 
 ## 1: Cloning the repository to your computer:
 
-Open Windows PowerShell, and select your driver by typing the following instructions:
+Open Windows PowerShell/Git and select your driver by typing the following instructions:
 ```sh
-  cd C:\Foster
+  cd C:\Documents
 ```
-and:
+cloning repository:
 ```sh
   git clone https://github.com/JacanaFSilva/Foster.git
 ```
 
 ## 2: Starting package manager:
+```sh
+  cd C:\Documents\foster-main
+```
 
 ```sh
  npm install
 ```
 
-## 3: Running the aplication.
+## 3: Running aplication.
 
-To open the **Server** enter:
+To Open a **Local Server** enter:
 
 ```sh
  npm start
+```
+**Web Url**:
+```sh
+ localhost:5500/
 ```
 
 *root_directory: by default "C:\Program Files"

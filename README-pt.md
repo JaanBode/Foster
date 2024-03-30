@@ -21,7 +21,8 @@
 <a id="live-server"></a>
 
 ## Live-Server
-- [Foster](https://fosterstores.onrender.com) - Site rodando as últimas modificações do projeto
+- [Foster](https://fosterstores.onrender.com) - Site rodando as últimas modificações do projeto.
+- [Foster](https://foster-7u8w.onrender.com/) - Url de Testes.
 - [Foster](https://repulsive-toga-fish.cyclic.app/) - Site backup.
 
 <a id="tecnologias"></a>
@@ -60,15 +61,13 @@ e em seguida:
  npm install
 ```
 
-## Passo 3: Executando a aplicação.
-
-Para executar o **Server**, utilize o seguinte comando no diretório padrão:
+## Passo 3: Executando via Terminal Git.
 
 ```sh
  npm start
 ```
 
-*diretório_padrão: normalmente localizado em "C:\Arquivos de Programas"
+*Dentro da pasta Templates, acesse um dos modelos de negócio disponíveis, copie e cole as pastas "public" e "src" para a pasta principal, recarregue a página para vizualizar as alterações
 <!--<h1 align="center">
   <img alt="Proffy" src="public/images/logo.svg" height="100px" />
     <br>Foster, your company to world<br/>

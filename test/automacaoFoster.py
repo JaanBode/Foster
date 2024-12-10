@@ -6,10 +6,17 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.firefox.service import Service as FirefoxService
+#from selenium.webdriver.chrome.service import Service as ChromeService #Import do webdriver Chrome 
+
 
 # Configurar o driver do Firefox
 service = FirefoxService(executable_path="..\\Foster-main\\test\\geckodriver.exe")
 driver = webdriver.Firefox(service=service)
+
+# Configurar o driver do Chrome
+#service = ChromeService(executable_path="..\\Foster-main\\test\\chromedriver.exe")
+#driver = webdriver.Chrome(service=service)
+
 
 # Inicializar Faker para gerar dados aleatórios
 fake = Faker()

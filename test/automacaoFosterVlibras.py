@@ -2,11 +2,11 @@ import tkinter as tk
 from tkinter import messagebox
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.firefox.service import Service as FirefoxService
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
+#from selenium.webdriver.chrome.service import Service as  ChromeService #Import do webdriver Chrome 
 
 # Função para criar a interface gráfica
 def ask_user():
@@ -18,11 +18,13 @@ def ask_user():
     root.quit()  # Fecha a janela da interface gráfica
     return result == 'yes'
 
-# Configurar o driver do Firefox para abrir em tela cheia
-options = Options()
-options.add_argument("--start-fullscreen")  # Inicia o navegador em tela cheia
+# Configurar o driver do Firefox
 service = FirefoxService(executable_path="..\\Foster-main\\test\\geckodriver.exe")
-driver = webdriver.Firefox(service=service, options=options)
+driver = webdriver.Firefox(service=service)
+
+# Configurar o driver do Chrome
+#service = ChromeService(executable_path="..\\Foster-main\\test\\chromedriver.exe")
+#driver = webdriver.Chrome(service=service)
 
 # Maximizar a janela após abrir o navegador
 driver.maximize_window()

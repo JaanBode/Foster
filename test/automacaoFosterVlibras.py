@@ -21,7 +21,7 @@ def ask_user():
 # Configurar o driver do Firefox para abrir em tela cheia
 options = Options()
 options.add_argument("--start-fullscreen")  # Inicia o navegador em tela cheia
-service = FirefoxService(executable_path="D:\\Arquivos\\Selenium\\geckodriver.exe")
+service = FirefoxService(executable_path="..\\Foster-main\\test\\geckodriver.exe")
 driver = webdriver.Firefox(service=service, options=options)
 
 # Maximizar a janela após abrir o navegador

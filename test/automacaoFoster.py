@@ -8,7 +8,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.firefox.service import Service as FirefoxService
 
 # Configurar o driver do Firefox
-service = FirefoxService(executable_path="D:\\Arquivos\\Selenium\\geckodriver.exe")
+service = FirefoxService(executable_path="..\\Foster-main\\test\\geckodriver.exe")
 driver = webdriver.Firefox(service=service)
 
 # Inicializar Faker para gerar dados aleatórios

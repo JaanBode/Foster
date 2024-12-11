@@ -2,10 +2,10 @@ import tkinter as tk
 from tkinter import messagebox
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.firefox.service import Service as FirefoxService
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.firefox.service import Service as FirefoxService
 #from selenium.webdriver.chrome.service import Service as  ChromeService #Import do webdriver Chrome 
 
 # Função para criar a interface gráfica

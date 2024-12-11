@@ -8,6 +8,14 @@ from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.firefox.service import Service as FirefoxService
 #from selenium.webdriver.chrome.service import Service as  ChromeService #Import do webdriver Chrome 
 
+# Configurar o driver do Firefox
+service = FirefoxService(executable_path="..\\Foster-main\\test\\geckodriver.exe")
+driver = webdriver.Firefox(service=service)
+
+# Configurar o driver do Chrome
+#service = ChromeService(executable_path="..\\Foster-main\\test\\chromedriver.exe")
+#driver = webdriver.Chrome(service=service)
+
 # Função para criar a interface gráfica
 def ask_user():
     root = tk.Tk()
@@ -17,14 +25,6 @@ def ask_user():
     
     root.quit()  # Fecha a janela da interface gráfica
     return result == 'yes'
-
-# Configurar o driver do Firefox
-service = FirefoxService(executable_path="..\\Foster-main\\test\\geckodriver.exe")
-driver = webdriver.Firefox(service=service)
-
-# Configurar o driver do Chrome
-#service = ChromeService(executable_path="..\\Foster-main\\test\\chromedriver.exe")
-#driver = webdriver.Chrome(service=service)
 
 # Maximizar a janela após abrir o navegador
 driver.maximize_window()

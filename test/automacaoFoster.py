@@ -8,15 +8,13 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.firefox.service import Service as FirefoxService
 #from selenium.webdriver.chrome.service import Service as ChromeService #Import do webdriver Chrome 
 
-
-# Configurar o driver do Firefox
+# Configurar o driver do Firefox - Utilize apenas um driver
 service = FirefoxService(executable_path="..\\Foster-main\\test\\geckodriver.exe")
 driver = webdriver.Firefox(service=service)
 
-# Configurar o driver do Chrome
+# Configurar o driver do Chrome - Utilize apenas um driver
 #service = ChromeService(executable_path="..\\Foster-main\\test\\chromedriver.exe")
 #driver = webdriver.Chrome(service=service)
-
 
 # Inicializar Faker para gerar dados aleatórios
 fake = Faker()
@@ -35,7 +33,9 @@ def generate_store_data():
         "lng": str(random.uniform(-180, 180))
     }
 
-# Endereço de acesso para realização de testes
+# Endereço de acesso local para realização de testes - Utilize apenas uma url de acesso
+#endereco = "http://localhost:3000/"
+# Endereço de acesso online para realização de testes - Utilize apenas uma url de acesso
 endereco = "https://foster-7u8w.onrender.com/"
 enderecoStores = endereco + "stores"
 enderecoCreateStore = endereco + "create-store"

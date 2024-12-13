@@ -2,7 +2,7 @@
 const express = require('express');
 const path = require('path');
 const pages = require('./pages.js');
-const port = 5500;
+const port = 3000;
 
 //iniciando o express
 const server = express()

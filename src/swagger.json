@@ -1,0 +1,181 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "title": "Foster API",
+      "description": "API para gerenciar lojas cadastradas no projeto Foster.",
+      "version": "1.0.0"
+    },
+    "servers": [
+      {
+        "url": "http://localhost:3000",
+        "description": "Servidor local"
+      }
+    ],
+    "paths": {
+      "/": {
+        "get": {
+          "summary": "Página inicial",
+          "description": "Renderiza a página inicial.",
+          "responses": {
+            "200": {
+              "description": "Página inicial renderizada com sucesso."
+            }
+          }
+        }
+      },
+      "/stores": {
+        "get": {
+          "summary": "Listar todas as lojas",
+          "description": "Retorna uma lista com todas as lojas cadastradas.",
+          "responses": {
+            "200": {
+              "description": "Lista de lojas retornada com sucesso.",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "integer",
+                          "example": 1
+                        },
+                        "name": {
+                          "type": "string",
+                          "example": "Loja 1"
+                        },
+                        "about": {
+                          "type": "string",
+                          "example": "Uma loja bacana"
+                        },
+                        "open_on_weekends": {
+                          "type": "boolean",
+                          "example": true
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Erro ao acessar o banco de dados."
+            }
+          }
+        }
+      },
+      "/store": {
+        "get": {
+          "summary": "Detalhes de uma loja",
+          "description": "Retorna os detalhes de uma loja com base no ID fornecido como query parameter.",
+          "parameters": [
+            {
+              "name": "id",
+              "in": "query",
+              "required": true,
+              "description": "ID da loja a ser consultada.",
+              "schema": {
+                "type": "integer"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Detalhes da loja retornados com sucesso.",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "integer",
+                        "example": 1
+                      },
+                      "name": {
+                        "type": "string",
+                        "example": "Loja 1"
+                      },
+                      "about": {
+                        "type": "string",
+                        "example": "Uma loja bacana"
+                      },
+                      "images": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "example": "imagem1.jpg"
+                        }
+                      },
+                      "firstImage": {
+                        "type": "string",
+                        "example": "imagem1.jpg"
+                      },
+                      "open_on_weekends": {
+                        "type": "boolean",
+                        "example": true
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Erro ao acessar o banco de dados."
+            }
+          }
+        }
+      },
+      "/create-store": {
+        "get": {
+          "summary": "Página de criação de loja",
+          "description": "Renderiza a página para criação de uma nova loja.",
+          "responses": {
+            "200": {
+              "description": "Página de criação renderizada com sucesso."
+            }
+          }
+        }
+      },
+      "/save-store": {
+        "post": {
+          "summary": "Salvar nova loja",
+          "description": "Salva uma nova loja no banco de dados.",
+          "requestBody": {
+            "required": true,
+            "content": {
+              "application/x-www-form-urlencoded": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "lat": { "type": "string", "example": "-23.550520" },
+                    "lng": { "type": "string", "example": "-46.633308" },
+                    "name": { "type": "string", "example": "Loja Nova" },
+                    "about": { "type": "string", "example": "Descrição da loja" },
+                    "whatsapp": { "type": "string", "example": "+5511999999999" },
+                    "images": { "type": "string", "example": "imagem1.jpg,imagem2.jpg" },
+                    "instructions": { "type": "string", "example": "Instruções de acesso" },
+                    "opening_hours": { "type": "string", "example": "08:00 - 18:00" },
+                    "open_on_weekends": { "type": "string", "example": "1" }
+                  },
+                  "required": ["lat", "lng", "name", "about", "whatsapp", "images", "instructions", "opening_hours"]
+                }
+              }
+            }
+          },
+          "responses": {
+            "302": {
+              "description": "Loja salva com sucesso e redirecionada."
+            },
+            "400": {
+              "description": "Todos os campos devem ser preenchidos."
+            },
+            "500": {
+              "description": "Erro ao salvar no banco de dados."
+            }
+          }
+        }
+      }
+    }
+  }
+  

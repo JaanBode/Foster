@@ -30,9 +30,9 @@
 
 - [NodeJS](https://nodejs.org/pt-br/) - Javascript Runtime Environment.
 - [Leaflet](https://leafletjs.com/) - Map containers with overlays.
-- [SQLite](https://www.sqlite.org/index.html) - Database to configure each store individually.
+- [SQLite](https://www.sqlite.org/index.html) - Store Database.
 - [VLibras](https://www.gov.br/governodigital/pt-br/vlibras) - Brazilian Sign Language Translator.
-- [Swagger](https://swagger.io/) - Database to configure each store individually.
+- [Swagger](https://swagger.io/) - API Docs.
 - [Python](https://www.python.org/) - Multi-paradigm programming language.
 - [Selenium](https://www.selenium.dev/) - Browser automation and functional tests provided by python package.
 
